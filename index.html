@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talk banana</title>
 </head>
+<style>
+    #input{
+        display: block;
+        width: 80%
+    }
+    #output{
+        display: block;
+        width: 79%;
+        border: 1px solid black;
+        padding: 30px 10px;
+        color: red;
+    }
+</style>
 <body>
-    <p id="para-tag">talk banana</p>
-    <button id="btn">click</button>
-
+    
+    <h1 id="para-tag">talk banana</h1>
+    <textarea id="input" rows="5" placeholder="enter the text to translate"></textarea>
+    <button id="translate">translate</button>
+    <div>out will show down</div>
+    <div id="output"></div>
+    
     <script>
         document.getElementById('para-tag').style.color = "red"
     </script>
     <script src="index.js"></script>
 </body>
+
 </html>
